@@ -1,0 +1,207 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 100%;
+  line-height: 24px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4ee8b87;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.Board {
+margin: auto;
+margin-top: 100px;
+width: 270px;
+position: relative;
+box-sizing: content-box;
+border: 8px solid #678;
+border-radius: 5px;
+}
+
+.SideSelect{
+margin: 100px auto;
+width: 30%;
+text-align: center;
+border: 18px solid green;
+border-radius: 5px;
+padding: 5px;
+}
+
+.SideSelect h2 {
+font-weight: bold;
+font-size: 1.3em;
+margin-bottom: 20px;
+}
+
+.SideSelect span {
+  font-weight: bold;
+  font-size: 1.8em;
+  cursor: pointer;
+  padding: 1px;
+  border: 2px dashed transparent;
+}
+.SideSelect span:hover {
+  border: 2px dashed;
+}
+
+.SideSelect span:first-of-type {
+  margin-right: 30px;
+  color: red;
+}
+.SideSelect span:last-of-type {
+  color: blue;
+}
+
+.gameOver {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+background-color: #9dcd37;
+opacity: 0.5;
+font-size: 2em;
+font-weight: bold;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+user-select: none;
+}
+
+.Board li {
+list-style-type: none;
+width:90px;
+height:90px;
+line-height: 90px;
+text-align: center;
+box-shadow:
+   2px 0 0 0 #fff,
+   0 2px 0 0 #fff,
+   2px 2px 0 0 #fff,
+   2px 0 0 0 #fff inset,
+   0 2px 0 0 #fff inset;
+float: left;
+background-color: #139866;
+font-size: 4em;
+font-weight: bold;
+user-select: none;
+
+}
+
+.higlighted {
+  background-color: red !important;
+}
+
+.youTurn {
+  font-weight: bold;
+  z-index: -10;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  line-height: 100%;
+  background-color: #e34444;
+  padding: 10px;
+  border: 1px solid #677;
+  border-radius: 5px;
+}
+.aiTurn {
+  font-weight: bold;
+  z-index: -10;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  line-height: 100%;
+  background-color: #948bea;
+  padding: 10px;
+  border: 1px solid #677;
+  border-radius: 5px;
+}
+
+.translate-appear {
+  opacity: 0;
+}
+
+.translate-appear.translate-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+
+.translate-enter {
+  opacity: 0;
+}
+
+.translate-enter.translate-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.translate-leave {
+  opacity: 1;
+}
+
+.translate-leave.translate-leave-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.ScorePanel {
+  margin-top: 15px;
+  text-align: center;
+  font-style: italic;
+}
+.ScorePanel span:nth-of-type(2){
+  margin: 0 7px;
+  border-left: 1px solid #677;
+  border-right: 1px solid #677;
+  padding: 0 7px;
+  color: #222;
+}
+
+.ScorePanel button {
+  padding: 3px;
+  border-radius: 5px;
+  background-color: #693b62a8;
+  color: #fff;
+  border: 1px solid #2d0527a8;
+}
+.ScorePanel button:hover {
+background-color: #667;
+}
