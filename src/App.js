@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import { Board } from './Board';
 import { SideSelect } from './SideSelect';
 import { ScorePanel } from './ScorePanel';
